@@ -46,7 +46,7 @@ function App() {
 	}, []);
 
 	const handleValue = (e) => {
-		if (e.target.classList.contains("icon")) {
+		if (e.target.classList.contains("icon" || 'btn')) {
 			const newValue = e.target.dataset.label;
 			setTitle(newValue);
 			setValue(user[newValue]);
