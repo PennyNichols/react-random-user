@@ -1,0 +1,47 @@
+{
+	"results": [
+		{
+			"gender": "female",
+			"name": { "title": "Miss", "first": "Caroline", "last": "Kristensen" },
+			"location": {
+				"street": { "number": 9005, "name": "Skovbyvej" },
+				"city": "Sundby/Erslev",
+				"state": "Midtjylland",
+				"country": "Denmark",
+				"postcode": 23101,
+				"coordinates": { "latitude": "-39.2490", "longitude": "81.8393" },
+				"timezone": {
+					"offset": "-7:00",
+					"description": "Mountain Time (US & Canada)"
+				}
+			},
+			"email": "caroline.kristensen@example.com",
+			"login": {
+				"uuid": "2602ebd7-2cef-4caa-a65f-4f228eb62a37",
+				"username": "yellowfish977",
+				"password": "fatman",
+				"salt": "W39WNQOz",
+				"md5": "6913c761ef3d91fadf8adb9dbfa1235c",
+				"sha1": "4a709c3dd9690a6e979b8984acafbe518bf27d15",
+				"sha256": "c3f98f881faa5bd1862d391f2489d4ae2cd187ec0a50e3aecc09467d6942eaf5"
+			},
+			"dob": { "date": "1953-12-06T21:07:27.911Z", "age": 68 },
+			"registered": { "date": "2004-10-21T07:23:14.872Z", "age": 18 },
+			"phone": "97316242",
+			"cell": "77421222",
+			"id": { "name": "CPR", "value": "061253-0534" },
+			"picture": {
+				"large": "https://randomuser.me/api/portraits/women/51.jpg",
+				"medium": "https://randomuser.me/api/portraits/med/women/51.jpg",
+				"thumbnail": "https://randomuser.me/api/portraits/thumb/women/51.jpg"
+			},
+			"nat": "DK"
+		}
+	],
+	"info": {
+		"seed": "02f8f8dce4c36e4c",
+		"results": 1,
+		"page": 1,
+		"version": "1.4"
+	}
+}
