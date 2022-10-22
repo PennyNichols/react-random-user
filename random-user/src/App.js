@@ -1,14 +1,11 @@
 import React, { useEffect } from "react";
-import {Link} from 'react-router-dom'
 import Footer from "./components/Footer/Footer";
-import { FaBirthdayCake, FaUser, FaMapMarkedAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { RiLockPasswordLine } from "react-icons/ri";
-import { GiRotaryPhone } from "react-icons/gi";
 import { useState } from "react";
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faUser, faEnvelope, faCakeCandles, faMap, faPhone, faKey } from '@fortawesome/free-solid-svg-icons'
+
 
 const url = "https://randomuser.me/api/";
-const defaultImage = "https://randomuser.me/api/portraits/men/75.jpg";
 
 function App() {
 	const [user, setUser] = useState(null);
@@ -53,6 +50,7 @@ function App() {
 			const newValue = e.target.dataset.label;
 			setTitle(newValue);
 			setValue(user[newValue]);
+      console.log(e.target)
 		}
 	};
 
@@ -70,26 +68,26 @@ function App() {
 					<p className="user-value">{value}</p>
 					<div className="values-list">
 						<button className="icon" data-label="name" onClick={handleValue}>
-							<FaUser />
+            <FontAwesomeIcon icon={faUser} />
 						</button>
 						<button className="icon" data-label="email" onClick={handleValue}>
-							<MdEmail />
+              <FontAwesomeIcon icon={faEnvelope} />
 						</button>
 						<button className="icon" data-label="age" onClick={handleValue}>
-							<FaBirthdayCake />
+              <FontAwesomeIcon icon={faCakeCandles} />
 						</button>
 						<button className="icon" data-label="street" onClick={handleValue}>
-							<FaMapMarkedAlt />
+              <FontAwesomeIcon icon={faMap} />
 						</button>
 						<button className="icon" data-label="phone" onClick={handleValue}>
-							<GiRotaryPhone />
+              <FontAwesomeIcon icon={faPhone} />
 						</button>
 						<button
 							className="icon"
 							data-label="password"
 							onClick={handleValue}
 						>
-							<RiLockPasswordLine />
+              <FontAwesomeIcon icon={faKey} />
 						</button>
 					</div>
 					<div className="btn-group">
